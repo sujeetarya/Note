@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">Notes</string>
+
+    <!-- Label for overflow menu option that inserts fake note data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all note data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Notes</string>
+
+    <!-- Title for the activity to add a new note [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_note">Add a Note</string>
+
+    <!-- Label for editor menu option to save note and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current note [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview">Overview</string>
+
+    <!-- Text hint for title field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_note_title">Title</string>
+
+    <!-- Text hint for description field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_note_description">Description</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="no_note_found">No Note!</string>
+
+</resources>

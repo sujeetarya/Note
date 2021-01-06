@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+
+    tools:context=".UpdateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nov 22,2020" />
+
+        <ImageButton
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_date"
+            app:layout_constraintStart_toEndOf="@+id/edt_date"
+            app:layout_constraintTop_toTopOf="@+id/edt_date" />
+
+        <EditText
+            android:id="@+id/edt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:focusable="false"
+            android:inputType="time"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_date"
+            app:layout_constraintEnd_toStartOf="@+id/btn_time"
+            app:layout_constraintTop_toTopOf="@+id/edt_date"
+            tools:text="03:32 PM" />
+
+        <ImageButton
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_watch"
+            android:text="TIME"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edt_time" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edt_title"
+        style="@style/TitleBoxStyle"
+        android:layout_below="@id/constrain" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        style="@style/DescriptionBoxStyle"
+        android:layout_below="@id/edt_title" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_update"
+        style="@style/FloatingActionButtonStyle"
+        android:src="@drawable/ic_update" />
+
+</RelativeLayout>
