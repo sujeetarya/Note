@@ -11,6 +11,19 @@
         app:showAsAction="never" />-->
     <item
         android:id="@+id/action_delete_all_entries"
+        android:icon="@drawable/ic_delete"
         android:title="@string/action_delete_all_entries"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:title="@string/action_privacy_policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_terms_and_condition"
+        android:title="@string/action_terms_and_condition"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about_us"
+        android:title="@string/action_about_us"
         app:showAsAction="never" />
 </menu>

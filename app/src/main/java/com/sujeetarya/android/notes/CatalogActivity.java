@@ -4,8 +4,10 @@ package com.sujeetarya.android.notes;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -189,6 +191,26 @@ public class CatalogActivity extends AppCompatActivity {
                             }
                         })
                         .setNegativeButton(android.R.string.no, null).show();
+                return true;
+            case R.id.action_privacy_policy:
+                Intent i = new Intent(getApplicationContext(), WebViewActivity.class);
+                i.putExtra("URL", "https://policies.sujeetarya.in/notes/privacy-policy");
+                startActivity(i);
+                return true;
+            case R.id.action_terms_and_condition:
+                Intent intentTerms = new Intent(getApplicationContext(), WebViewActivity.class);
+                intentTerms.putExtra("URL", "https://policies.sujeetarya.in/notes/terms-and-condition");
+                startActivity(intentTerms);
+                return true;
+            case R.id.action_about_us:
+                // Open in web view
+                /*Intent intentAboutUs = new Intent(getApplicationContext(), WebViewActivity.class);
+                intentAboutUs.putExtra("URL", "https://sujeetarya.in/about");
+                startActivity(intentAboutUs);*/
+                // open in external URL
+                Intent in = new Intent(Intent.ACTION_VIEW);
+                in.setData(Uri.parse("https://sujeetarya.in/about"));
+                startActivity(in);
                 return true;
         }
         return super.onOptionsItemSelected(item);

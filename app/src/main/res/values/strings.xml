@@ -9,6 +9,15 @@
     <!-- Label for overflow menu option that deletes all note data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Delete All Notes</string>
 
+    <!-- Label for overflow menu option that open privacy policy page in the app [CHAR LIMIT=20] -->
+    <string name="action_privacy_policy">Privacy Policy</string>
+
+    <!-- Label for overflow menu option that open privacy policy page in the app [CHAR LIMIT=20] -->
+    <string name="action_terms_and_condition">Terms and Condition</string>
+
+    <!-- Label for overflow menu option that open privacy policy page in the app [CHAR LIMIT=20] -->
+    <string name="action_about_us">About Us</string>
+
     <!-- Title for the activity to add a new note [CHAR LIMIT=20] -->
     <string name="editor_activity_title_new_note">Add a Note</string>
 

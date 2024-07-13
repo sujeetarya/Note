@@ -3,6 +3,7 @@
     <string name="app_name">Notes</string>
     <string name="action_insert_dummy_data">" डमी डेटा डालें"</string>
     <string name="action_delete_all_entries">" सभी  टिप्पणी  हटाएं"</string>
+    <string name="action_terms_and_condition">नियम व शर्तें</string>
     <string name="editor_activity_title_new_note">" टिप्पणी जोड़ें"</string>
     <string name="action_save">" सहेजें"</string>
     <string name="action_delete">" हटाएं"</string>
@@ -14,4 +15,6 @@
     <string name="description">विवरण</string>
     <string name="title">" शीर्षक"</string>
     <string name="no_note_found">कोई नोट नहीं</string>
+    <string name="action_privacy_policy">गोपनीयता नीति</string>
+    <string name="action_about_us">हमारे बारे में</string>
 </resources>
